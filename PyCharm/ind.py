@@ -7,6 +7,7 @@ def decorator(tag='h1'):
             value = func(*args, **kwargs)
             return f'<{tag}>{value}</{tag}>'
 
+        
         return wrapper
 
     return decorator_func
